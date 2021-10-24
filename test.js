@@ -1,4 +1,4 @@
-const getUserDownloads = require('./index.js');
+const getUserDownloads = require('./index');
 
 require('dotenv').config();
 

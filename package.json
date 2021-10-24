@@ -10,9 +10,10 @@
     "email": "art.ginzburg@ya.ru",
     "url": "https://ginzburg.art"
   },
-  "main": "app.js",
+  "main": "endpoint.js",
   "scripts": {
-    "start": "node test"
+    "start": "node test",
+    "test": "node app"
   },
   "dependencies": {
     "@octokit/rest": "^18.12.0",

@@ -1,9 +1,10 @@
 # Custom GitHub user total downloads badge for everyone!
 
 Use the following URL and change `:user` at the end to the username of a GitHub user
+`:token` is your GitHub personal access token — can be omitted, but authorized users have higher API rate limits
 
 ```
-https://img.shields.io/endpoint?url=https://artginzburg.runkit.io/github-user-downloads/branches/master/:user
+https://img.shields.io/endpoint?url=https://artginzburg.runkit.io/github-user-downloads/branches/master/:user/:token
 ```
 
 ## Example

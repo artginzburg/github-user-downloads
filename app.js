@@ -1,5 +1,5 @@
-import getUserDownloads from './index.js';
-import express from 'express';
+const getUserDownloads = require('./index.js');
+const express = require('express');
 
 const app = express();
 

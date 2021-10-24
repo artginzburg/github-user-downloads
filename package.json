@@ -5,7 +5,6 @@
   "license": "ISC",
   "repository": "artginzburg/github-user-downloads",
   "funding": "https://github.com/artginzburg/github-user-downloads?sponsor=1",
-  "type": "module",
   "author": {
     "name": "Art Ginzburg",
     "email": "art.ginzburg@ya.ru",

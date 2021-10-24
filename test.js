@@ -1,6 +1,5 @@
-import dotenv from 'dotenv';
-import getUserDownloads from './index.js';
+const getUserDownloads = require('./index.js');
 
-dotenv.config();
+require('dotenv').config();
 
 getUserDownloads(({ USER = 'artginzburg', PERSONAL_ACCESS_TOKEN } = process.env)).then(console.log);

@@ -1,6 +1,6 @@
-import { Octokit } from '@octokit/rest';
+const { Octokit } = require('@octokit/rest');
 
-export default async function getUserDownloads(username, personalAccessToken) {
+async function getUserDownloads(username, personalAccessToken) {
   const octokit = new Octokit({ auth: personalAccessToken });
 
   const { data: repos } = await octokit.rest.repos.listForUser({
@@ -46,3 +46,5 @@ export default async function getUserDownloads(username, personalAccessToken) {
 
   return userDownloads;
 }
+
+module.exports = getUserDownloads;

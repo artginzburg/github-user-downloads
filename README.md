@@ -1,18 +1,27 @@
-# Custom GitHub user total downloads badge for everyone!
+# Purpose
 
-Use the following URL and change `:user` at the end to the username of a GitHub user
-`:token` is your GitHub personal access token — can be omitted, but authorized users have higher API rate limits
+Getting total number of downloads
+for all releases
+of all repositories
+of a GitHub user
+by username
 
-```
-https://img.shields.io/endpoint?url=https://artginzburg.runkit.io/github-user-downloads/branches/master/:user/:token
-```
+## Limitations
 
-## Example
+This is for testing and personal purposes only (for now)
 
-Using Markdown syntax:
-`![](https://img.shields.io/endpoint?url=https://artginzburg.runkit.io/github-user-downloads/branches/master/artginzburg)`
+> I'm planning to build sort of an ecosystem around it later
 
-Outputs this:
-<sub>![](https://img.shields.io/endpoint?url=https://artginzburg.runkit.io/github-user-downloads/branches/master/artginzburg)</sub>
+# Preparation
 
-> You can still style the badge however you want as documented at https://shields.io/#styles
+> Assuming you have Node.JS installed
+
+1. Create a Personal Access Token (Following [GitHub Docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token))
+   > No scopes (permissions) needed — just the token
+
+# Testing
+
+1. Clone the repo
+2. Install dependencies (`npm i`)
+3. Set `PERSONAL_ACCESS_TOKEN` and `USER` environmental variables (use `.env` file if you want)
+4. Run `npm start`

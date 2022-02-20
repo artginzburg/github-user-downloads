@@ -1,6 +1,6 @@
 {
   "name": "@artginzburg/github-user-downloads",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Get total downloads of all repos by username",
   "license": "ISC",
   "repository": "artginzburg/github-user-downloads",
@@ -10,14 +10,11 @@
     "email": "art.ginzburg@ya.ru",
     "url": "https://ginzburg.art"
   },
-  "main": "endpoint.js",
   "scripts": {
-    "start": "node test",
-    "test": "node app"
+    "start": "node test"
   },
   "dependencies": {
-    "@octokit/rest": "^18.12.0",
-    "express": "^4.17.1"
+    "@octokit/rest": "^18.12.0"
   },
   "devDependencies": {
     "dotenv": "^10.0.0"

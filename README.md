@@ -23,5 +23,5 @@ This is for testing and personal purposes only (for now)
 
 1. Clone the repo
 2. Install dependencies (`npm i`)
-3. Set `PERSONAL_ACCESS_TOKEN` and `USER` environmental variables (use `.env` file if you want)
+3. Set `GITHUB_TOKEN` and `USER` environmental variables (use `.env` file if you want)
 4. Run `npm start`

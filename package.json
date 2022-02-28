@@ -13,6 +13,9 @@
   "scripts": {
     "start": "node test"
   },
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "@octokit/rest": "^18.12.0"
   },

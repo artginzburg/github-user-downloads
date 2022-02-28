@@ -1,6 +1,6 @@
 const { Octokit } = require('@octokit/rest');
 
-async function getUserDownloads(username, auth) {
+module.exports = async function getUserDownloads(username, auth = process.env.GITHUB_TOKEN) {
   const octokit = new Octokit({ auth });
 
   const userDownloads = {
@@ -40,5 +40,3 @@ async function getUserDownloads(username, auth) {
 
   return userDownloads;
 }
-
-module.exports = getUserDownloads;

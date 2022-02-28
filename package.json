@@ -1,6 +1,6 @@
 {
   "name": "@artginzburg/github-user-downloads",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Get total downloads of all repos by username",
   "license": "ISC",
   "repository": "artginzburg/github-user-downloads",

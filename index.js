@@ -14,7 +14,13 @@ const REPO_CONCURRENCY = 4;
 const RELEASE_CONCURRENCY = 4;
 
 module.exports = async function getUserDownloads(username, auth = process.env.GITHUB_TOKEN) {
-  const { rest } = new Octokit({ auth });
+  const { rest } = new Octokit({
+    auth,
+    // This (old) Octokit pulls in node-fetch@2, which throws "Premature close" on
+    // Node 24+ (the default on GitHub Actions since mid-2026). Hand it the runtime's
+    // native fetch (undici) instead, which handles the connection correctly.
+    ...(typeof fetch === 'function' ? { request: { fetch } } : {}),
+  });
 
   const userDownloads = {
     total: 0,

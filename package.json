@@ -3,7 +3,10 @@
   "version": "0.5.1",
   "description": "Get total downloads of all repos by username",
   "license": "ISC",
-  "repository": "artginzburg/github-user-downloads",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artginzburg/github-user-downloads.git"
+  },
   "funding": "https://github.com/artginzburg/github-user-downloads?sponsor=1",
   "author": {
     "name": "Art Ginzburg",
@@ -15,7 +18,9 @@
     "start": "node cli",
     "lint": "eslint . --fix"
   },
-  "bin": "./cli.js",
+  "bin": {
+    "github-user-downloads": "cli.js"
+  },
   "files": [
     "index.js",
     "cli.js",
